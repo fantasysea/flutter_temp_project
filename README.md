@@ -2,3 +2,7 @@
 
 使用fish redux 管理狀態
 常見app項目模板代碼
+
+fish redux通过store的_dispatch来进行数据驱动,_dispatch其实包含了oneffect和next,oneffect没处理的时候才会去走next,next其实就是我们项目中的reducer
+
+redux的思想其实很简单,就是store-action-reducer,store不能直接修改,暴露了dispatch方法给外面,外面通过action来进行修改数据,reducer就是每个action对应的修改逻
